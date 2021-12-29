@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "webpack --mode=development",
     "dev": "cross-env NODE_ENV=development webpack-dev-server"
   },
   "keywords": [],
@@ -16,14 +16,19 @@
     "@babel/plugin-proposal-class-properties": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-typescript": "^7.15.0",
+    "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
+    "babel-preset-es2015-ie": "^6.7.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.0.1",
+    "mini-css-extract-plugin": "^2.4.4",
     "node-sass": "^6.0.1",
     "path": "^0.12.7",
+    "postcss-cli": "^9.0.1",
+    "postcss-loader": "^6.2.0",
     "remove": "^0.1.5",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",
@@ -35,5 +40,7 @@
     "yaml-loader": "^0.6.0",
     "yaml-ts-loader": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.9.3"
+  }
 }
